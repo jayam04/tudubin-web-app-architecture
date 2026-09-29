@@ -2,11 +2,11 @@
 
 import { useRouter } from "next/navigation";
 
-import StudentForm from "../../components/StudentForm";
+import StudentForm from "../../../components/StudentForm";
 
-import { createStudent } from "../../services/studentAPI";
+import { createStudent } from "../../../services/studentAPI";
 
-import { StudentCreate } from "../../types/student";
+import { StudentCreate } from "../../../types/student";
 
 export default function NewStudentPage() {
   const router = useRouter();
