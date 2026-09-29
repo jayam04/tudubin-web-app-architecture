@@ -1,5 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
+import cors from "cors";
 
 import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
@@ -9,8 +10,9 @@ import studentRouter from "./routes/student";
 
 
 const app = express();
-const PORT = 3000;
+const PORT = 9000;
 
+app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
